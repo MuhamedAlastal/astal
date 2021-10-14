@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="icon" href="img/Untitled-3.png">
+    <link rel="stylesheet" href="css/carousel.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Nova+Slim&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            font-family: 'Tajawal', sans-serif;
+        }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            /* box-shadow: inset 0 0 5px #ccc; */
+            background-color: #4A235A;
+            border-radius: 10px;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            /* background: #7724B4; */
+            background-image: linear-gradient(#C39BD3, #C39BD3);
+            border-radius: 10px;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:active {
+            /* background: #8C45C1; */
+            background-image: linear-gradient(#7d3c98, #7D3C98);
+        }
+
+        .div-header {
+            background-image: url(img/background-2.png);
+            width: 100%;
+            margin-top: 50px;
+            padding: 200px 45%;
+            text-align: center;
+        }
+
+        .div-header-text {
+            margin-top: 120px;
+            color: white;
+        }
+
+        .div-header-img {
+            margin-top: 20px;
+            margin-bottom: 0px;
+            animation: img1 2.5s infinite;
+        }
+
+        @keyframes img1 {
+            0% {
+                margin-top: 20px;
+                margin-bottom: 0px;
+            }
+
+            50% {
+                margin-top: 0px;
+                margin-bottom: 20px;
+            }
+
+            100% {
+                margin-top: 20px;
+                margin-bottom: 0px;
+            }
+        }
+
+        .navbar {
+            background-image: url(img/background-2.png);
+            background-size: 100%;
+            padding: 0;
+        }
+
+        .navbar a {
+            padding: 15px 0px;
+            margin: 0px 5px;
+            font-weight: 600;
+            letter-spacing: 2px;
+        }
+
+
+        .dropdown-item:hover {
+            background-color: #D7BDE2;
+            transition: 0.3s;
+        }
+
+
+        .btn-outline-warning {
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-left: 7px;
+        }
+
+        .btn-outline-warning:hover {
+            color: rgb(145, 29, 120);
+        }
+
+        .header-title {
+            animation: title 20s infinite;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        .h1-head {
+            animation: mob 1s;
+            margin-bottom: 10px;
+        }
+
+        @keyframes mob {
+            0% {
+                margin-top: 10px;
+                opacity: 0%;
+                margin-bottom: 0px;
+            }
+
+            100% {
+                margin-top: 0px;
+                opacity: 100%;
+                margin-bottom: 10px;
+            }
+        }
+
+        @keyframes title {
+            0% {
+                color: #E74C3C;
+                transition: 2s;
+            }
+
+            10% {
+                color: #8E44AD;
+                transition: 2s;
+            }
+
+            20% {
+                color: #3498DB;
+                transition: 2s;
+            }
+
+            30% {
+                color: #16A085;
+                transition: 2s;
+            }
+
+            40% {
+                color: #2ECC71;
+                transition: 2s;
+            }
+
+            50% {
+                color: #F39C12;
+                transition: 2s;
+            }
+
+            60% {
+                color: #D35400;
+                transition: 2s;
+            }
+
+            70% {
+                color: #BDC3C7;
+                transition: 2s;
+            }
+
+            80% {
+                color: #7F8C8D;
+                transition: 2s;
+            }
+
+            90% {
+                color: #908E8E;
+                transition: 2s;
+            }
+
+            100% {
+                color: #C0392B;
+                transition: 2s;
+            }
+        }
+
+        .nav-link:hover {
+            border-bottom: 1px solid white;
+        }
+
+        #btn-outline-warning {
+            padding: 5px 30px;
+            font-size: 36px;
+            font-weight: 650;
+            margin-top: 40px;
+            letter-spacing: 3px;
+        }
+
+        .serveces {
+            width: 90%;
+            margin: 50px 5%;
+            text-align: center;
+            animation: main-serveces 2s;
+        }
+
+        @keyframes main-serveces {
+            0% {
+                opacity: 0%;
+                margin-bottom: 10px;
+                margin-top: 90px;
+            }
+
+            100% {
+                opacity: 100%;
+                margin-bottom: 50px;
+                margin-top: 50px;
+            }
+        }
+
+        .serveces h1 {
+            font-size: 50px;
+            font-weight: 700;
+
+        }
+
+        .card-callUs {
+            text-align: center;
+            padding: 40px 0px;
+            box-shadow: 1px 1px 20px #ddd;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            animation: callUs 2s infinite;
+        }
+
+        @keyframes callUs {
+            0% {
+                margin-top: 5px;
+                margin-bottom: 15px;
+            }
+
+            50% {
+                margin-top: 15px;
+                margin-bottom: 5px;
+            }
+
+            100% {
+                margin-top: 5px;
+                margin-bottom: 15px;
+            }
+        }
+
+        .card-callUs:hover {
+            box-shadow: 7px 7px 40px #ddd;
+            transition: 0.4s;
+        }
+
+        .carousel-caption h3,
+        h6 {
+            color: white;
+        }
+
+        .btn-outline-primary {
+            color: #8E44AD;
+            border: 1px solid #8E44AD;
+
+        }
+
+        .btn-outline-primary:hover {
+            background-color: #8E44AD;
+            border: 1px solid #8E44AD;
+        }
+
+        .footer-a:hover {
+            color: #F39C12;
+            transition: 0.3s;
+        }
+
+        /* .btn-outline-warning {
+            color: #c3d8ee;
+            border: 1px solid #c3d8ee;
+        }*/
+
+
+
+        .form-control:focus {
+            border-color: #ffc107;
+            box-shadow: 0 0 0 1px #ffc107;
+        }
+
+        .nav-item,
+        .d-flex {
+            animation: nav 1s;
+            margin-bottom: 10px;
+        }
+
+        @keyframes nav {
+            0% {
+                opacity: 0%;
+                margin-top: 10px;
+                margin-bottom: 0px;
+            }
+
+            100% {
+                opacity: 100%;
+                margin-top: 0px;
+                margin-bottom: 10px;
+
+            }
+        }
+
+        .div-head-text-head {
+            animation: div-head-text-head 2s;
+
+
+            width: 80%;
+        }
+
+        @keyframes div-head-text-head {
+            0% {
+                opacity: 0%;
+                margin-right: 80%;
+            }
+
+            100% {
+                opacity: 100%;
+                margin-right: 0%;
+            }
+        }
+
+        .div-header-img-1 {
+            animation: div-header-img-1 1.5s;
+        }
+
+        @keyframes div-header-img-1 {
+            0% {
+                padding: 100%;
+            }
+
+            100% {
+                padding: 0%;
+            }
+        }
+
+        .main-1 {
+            animation: main-1 2s;
+            padding-left: 40px;
+            width: 90%;
+        }
+
+        @keyframes main-1 {
+            0% {
+                opacity: 0%;
+                margin-left: 80%;
+            }
+
+            100% {
+                opacity: 100%;
+                margin-left: 0%;
+            }
+        }
+
+        .main-2 div {
+            margin: 15px 0px 15px 0px;
+            animation: main-2 3s;
+        }
+
+        @keyframes main-2 {
+            0% {
+                opacity: 0%;
+            }
+
+            100% {
+                opacity: 100%;
+            }
+        }
+
+        .main-3 {
+            animation: main-3 2s;
+        }
+
+        @keyframes main-3 {
+            0% {
+                margin-left: 100%;
+                opacity: 0%;
+            }
+
+            100% {
+                margin-left: 0%;
+                opacity: 100%;
+            }
+        }
+
+        .carousel-light {
+            animation: carousle 3s;
+        }
+
+        @keyframes carousle {
+            0% {
+                opacity: 0%;
+            }
+
+            100% {
+                opacity: 100%;
+            }
+        }
+
+        .main-4 {
+            animation: main-4 2s;
+        }
+
+        @keyframes main-4 {
+            0% {
+                margin-left: 80%;
+                opacity: 0%;
+            }
+
+            100% {
+                margin-left: 0%;
+                opacity: 100%;
+            }
+        }
+
+        .form-1 {
+            animation: form-1 2s;
+        }
+
+        @keyframes form-1 {
+            0% {
+                opacity: 0%;
+            }
+
+            100% {
+                opacity: 100%;
+            }
+        }
+
+        .main-5 {
+            animation: main-5 2s;
+        }
+
+        @keyframes main-5 {
+            0% {
+                margin-top: 100px;
+                opacity: 0%;
+            }
+
+            100% {
+                margin-top: 0px;
+                opacity: 100%;
+            }
+        }
+
+        .main-6 {
+            animation: main-6 2s;
+        }
+
+        @keyframes main-6 {
+            0% {
+                opacity: 0%;
+            }
+
+            100% {
+                opacity: 100%;
+            }
+        }
+
+        #goUp {
+            bottom: 25px;
+            left: 25px;
+            display: block;
+            z-index: 99999;
+            position: fixed;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand header-title" href="#" style="color: white;font-family: 'Nova Slim', cursive;">
+                    <h1 class="h1-head" style="font-family: 'Nova Slim', cursive;">Creative</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left: 50px;">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index-english.html"
+                                style="color: white;">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="webDisgn-english.html" target="_blank" style="color: white;">Web
+                                Designer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="template-english.html" target="_blank" tabindex="-1"
+                                style="color: white;">Template</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                                languge
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="border-radius: 10px;">
+                                <li><a class="dropdown-item" href="index-english.html" target="_blank" style="
+                                    padding: 5px 0px;
+                                    text-align: center;
+                                    margin: 0px;
+                                    border-radius: 7px 7px 0px 0px;
+                                    ">English</a></li>
+                                <li><a class="dropdown-item" href="index-arabic.html" target="_blank" style="
+                                        padding: 5px 0px;
+                                        text-align: center;
+                                        margin: 0px;
+                                        
+                                        ">Arabic</a></li>
+
+                                <li><a class="dropdown-item" href="index-turkish.html" target="_blank" style="
+                                        padding: 5px 0px;
+                                        text-align: center;
+                                        margin: 0px;
+                                        border-radius: 0px 0px 7px 7px;
+                                        ">Turkish</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                    <form class="d-flex">
+                        <a class="btn btn-primary" href="sign in.html" role="button" style="padding: 7px 10px;">Sign
+                            in</a>
+                        <input class="form-control me-2" type="search" placeholder="Search ...." aria-label="Search"
+                            style="padding: 0 20px; width: 300px;">
+                        <button class="btn btn-outline-warning btn-head" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid" style="width: 100%;">
+            <div class="row" style="background-image: url(img/background-2.png); 
+                 padding-top: 80px;
+                 padding-bottom: 33px; background-size: 100%;" dir="rtl">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 div-header-img" style="text-align: center;">
+                    <img src="img/hero-img.png" alt="" width="70%" style="margin-top: 80px;" class="div-header-img-1">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 div-header-text" style="text-align: center;">
+                    <div style="text-align: left;" class="div-head-text-head">
+                        <h3>Better experience with</h3>
+                        <br>
+                        <h1 style="font-size: 42px;  font-weight: 900; letter-spacing: 6px;">creative</h1>
+                        <br>
+                        <h3>people</h3>
+                        <br>
+                        <h3>We are a team of talented designers we create websites using Bootstrap</h3>
+                        <button type="button" class="btn btn-outline-warning" id="btn-outline-warning">start</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <br><br>
+    <div class="container-fluid" style="text-align: center; margin-top: 40px;">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 div-header-img" style="text-align: left;">
+                <img src="img/about.jpg" alt="" width="90%" style="margin: 0px 5%;" class="div-header-img-1">
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="text-align: center;">
+                <div style="text-align: left;" class="main-1">
+                    <h1>
+                        Easy and comfortable designs as they deserve
+                    </h1>
+                    <h5 style="color: black;">Create websites using different design and programming languages</h5>
+                    <br>
+                    <h6 style="color: black;"><svg xmlns="http://www.w3.org/2000/svg" style="color: #8E44AD;" width="19"
+                            height="19" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                            <path
+                                d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+                        </svg> Full and ultimate accuracy in working</h6>
+                    <h6 style="color: black;"><svg xmlns="http://www.w3.org/2000/svg" style="color: #8E44AD;" width="19"
+                            height="19" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                            <path
+                                d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+                        </svg> Beautiful, eye-friendly and attractive designs</h6>
+                    <h6 style="color: black;"><svg xmlns="http://www.w3.org/2000/svg" style="color: #8E44AD;" width="19"
+                            height="19" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                            <path
+                                d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+                        </svg> Completion of setting up sites in the shortest possible time</h6>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <br><br><br><br><br><br>
+    <div class="container-fluid"
+        style="text-align: center; margin-top: 40px; background-image: url(img/background-2.png);background-size: 100%; color: white; font-weight: bolder;">
+        <div class="row main-2" style="padding: 30px 0px;">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" style="text-align: center; margin: 15px 0px;">
+                <h1>232</h1>
+                <br>
+                <h2> <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                        class="bi bi-person" viewBox="0 0 16 16">
+                        <path
+                            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                    </svg> Client</h2>
+            </div>
+            <br>
+            <br>
+
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" style="text-align: center; margin: 15px 0px;">
+                <h1>521</h1>
+                <br>
+                <h2> <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" fill="currentColor"
+                        class="bi bi-file-earmark-check" viewBox="0 0 16 16">
+                        <path
+                            d="M10.854 7.854a.5.5 0 0 0-.708-.708L7.5 9.793 6.354 8.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                        <path
+                            d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z" />
+                    </svg> Project</h2>
+            </div>
+            <br>
+            <br>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" style="text-align: center; margin: 15px 0px;">
+                <h1>1463</h1>
+                <br>
+                <h2> <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                        class="bi bi-clock" viewBox="0 0 16 16">
+                        <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
+                    </svg> Hours Of Support</h2>
+            </div>
+            <br>
+            <br>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" style="text-align: center; margin: 15px 0px;">
+                <h1>15</h1>
+                <br>
+                <h2> <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                        class="bi bi-person-check" viewBox="0 0 16 16">
+                        <path
+                            d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                        <path fill-rule="evenodd"
+                            d="M15.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
+                    </svg> Hard Workers</h2>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="container-fluid">
+        <div class="serveces">
+            <h1>serveces</h1>
+            <br>
+            <h5>The possibility of providing services at any time and in the shortest possible period of time</h5>
+        </div>
+        <div class="col-12 main-3">
+            <div class="card mb-3" style="width: 90%; margin: 15px 5%;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="img/find-web-developer.jpg" alt="..." width="100%" height="240px">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h2 class="card-title">Web Design</h2>
+                            <h3 class="card-text">Creating websites in a way that satisfies the customer and makes him
+                                feel satisfied with our choice of business implementation</h3>
+                            <p class="card-text"><small class="text-muted"></small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 main-3">
+            <div class="card mb-3" style="width: 90%; margin: 15px 5%;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="img/Slide1.png" alt="..." width="100%" height="240px"
+                            style="border-right: 1px solid #cccc;">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h2 class="card-title">Template</h2>
+                            <h3 class="card-text">Selling website templates of all shapes, types and sections</h3>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="gallery-container">
+                <img class="gallery-item gallery-item-1" src="img/web-dis-1.png" data-index="1">
+                <img class="gallery-item gallery-item-2" src="img/web-dis-2.jpg" data-index="2">
+                <img class="gallery-item gallery-item-3" src="img/web-dis-3.jpg" data-index="3">
+                <img class="gallery-item gallery-item-3" src="img/web-dis-4.jpg" data-index="4">
+                <img class="gallery-item gallery-item-3" src="img/web-dis-5.jpg" data-index="5">
+            </div>
+            <div class="gallery-controls"></div>
+        </div>
+
+        <script src="js/carousel.js"></script>
+        <div class="container-fluid main-4" style="margin-top: 100px;">
+
+            <div class="row">
+                <div class="col-lg-4 offset-lg-1  col-md-12 col-sm-6 col-xs-12 card-callUs" style="text-align: center;">
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-tag"
+                    viewBox="0 0 16 16" style="color: #7d25a3;">
+                    <path d="M6 4.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-1 0a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0z" />
+                    <path
+                        d="M2 1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 1 6.586V2a1 1 0 0 1 1-1zm0 5.586 7 7L13.586 9l-7-7H2v4.586z" />
+                </svg> -->
+                    <img src="img/Untitled-5.png" alt="" width="42" height="56">
+                    <h1>Our Address</h1>
+
+                    <h5>palestine , Gaza , Khan youns , Alqarara</h5>
+                </div>
+                <div class="col-lg-2 offset-lg-1 col-md-12 col-sm-6 col-xs-12 card-callUs" style="text-align: center;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor"
+                        class="bi bi-envelope-fill" viewBox="0 0 16 16" style="color: #7d25a3;">
+                        <path
+                            d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z" />
+                    </svg>
+                    <h1>Email Us</h1>
+
+                    <h5>*********@gmail.com</h5>
+                </div>
+                <div class="col-lg-2 offset-lg-1  col-md-12 col-sm-6 col-xs-12 card-callUs" style="text-align: center;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor"
+                        class="bi bi-telephone-outbound" viewBox="0 0 16 16" style="color: #7d25a3;">
+                        <path
+                            d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511zM11 .5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V1.707l-4.146 4.147a.5.5 0 0 1-.708-.708L14.293 1H11.5a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                    <h1>Call Us</h1>
+                    <h5>05********</h5>
+                </div>
+            </div>
+        </div>
+        <div class="container form-1" style="margin-top: 100px;">
+            <form action="index-english.html" method="post" name="form" class="form">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                        <input type="text" id="name" class="form-control" placeholder="YourName" aria-label="Username"
+                            aria-describedby="addon-wrapping" style="padding: 10px;">
+                    </div>
+                    <br><br>
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 form-2">
+                        <input type="email" id="email1" name="email" class="form-control" placeholder="YourEmail"
+                            aria-label="Email" aria-describedby="addon-wrapping" style="padding: 10px;">
+                    </div>
+                    <br><br>
+                    <div class="col-12">
+                        <input type="text" id="job" class="form-control" placeholder="job" aria-label="Username"
+                            aria-describedby="addon-wrapping" style="padding: 10px;">
+                    </div>
+                    <br><br>
+                    <div class="col-12">
+                        <!-- <input type="" class="form-control" placeholder="Message" aria-label="Username" aria-describedby="addon-wrapping">
+                <textarea name="Message" id="" cols="157%" rows="6" placeholder="Message"
+                    style="padding: 5px; border-radius: 3px;"></textarea> -->
+                        <div class="input-group">
+                            <textarea class="form-control" aria-label="With textarea" rows="6"
+                                placeholder="Message"></textarea>
+                        </div>
+                        <br>
+
+                        <button type="button" class="btn btn-outline-primary"
+                            style="font-size: 23px;font-weight: 650; letter-spacing: 2px; padding: 7px 15px;"
+                            style="font-family: 'Nova Slim', cursive;" onclick="myfunction1()">Submit <svg
+                                xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor"
+                                class="bi bi-telegram" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z" />
+                            </svg></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="container-fluid"
+            style="background-image: url(img/background-2.png); padding: 60px;margin-top: 80px; background-size: 100%;">
+            <div class="row">
+                <div class=" col-lg-6 col-md-6 col-sm-6 col-xs-12 main-5" style="color: white; letter-spacing: 2px;">
+                    <h1 style="font-family: 'Nova Slim', cursive; animation: title 20s infinite;">Creative</h1>
+                    <br><br>
+                    <h5>A108 Salah Aladin Street</h5>
+                    <h5>palestine</h5>
+                    <br>
+                    <h5>Phone: 0594400509</h4>
+                        <h5>m421029471@gmail.com</h5>
+                </div>
+                <br><br>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 main-6"
+                    style="text-decoration: none; text-align: center; padding-left: 60px; margin: 30px 0px;">
+                    <div style="text-align: left;">
+                        <a href="index-english.html" style="text-decoration: none; color: white;">
+                            <h5 class="footer-a">Home</h5>
+                        </a>
+                        <br>
+                        <!-- <a href="#" style="text-decoration: none; color: white;">
+                        <h5 class="footer-a">About</h5>
+                    </a>
+                    <br> -->
+                        <a href="template-english.html" target="_blank" style="text-decoration: none; color: white;">
+                            <h5 class="footer-a">Web Design</h5>
+                        </a>
+                        <br>
+                        <a href="template-english.html" target="_blank" style="text-decoration: none; color: white;">
+                            <h5 class="footer-a">Template</h5>
+                        </a>
+                        <br>
+                        <!-- <a href="#" style="text-decoration: none; color: white;">
+                        <h5 class="footer-a">Contact Us</h5>
+                    </a> -->
+                    </div>
+                </div>
+                <form action="index-english.html" method="post" name="form" class="form">
+                    <div class="col-lg-12 col-md-10 col-sm-12 col-xs-12 main-5"
+                        style="text-align: center; color: white; ">
+                        <h3>Subscribe to the mailing list</h3>
+                        <br>
+                        <h5>Sign up to the mailing list to receive all new</h5>
+                        <br><br>
+                        <div class="input-group mb-3">
+                            <input type="Email" id="email" name="email" class="form-control" placeholder="Email"
+                                aria-label="Recipient's username" aria-describedby="button-addon2">
+                            <button class="btn btn-outline-warning" type="button" id="button-addon2"
+                                onclick="myfunction()">Subscribe</button>
+                        </div>
+                    </div>
+                </form>
+                <div style="text-align: center; padding-top: 100px; padding-left: 20px;">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                            class="bi bi-facebook" viewBox="0 0 16 16" style="color: #c3d8ee;">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                            class="bi bi-twitter" viewBox="0 0 16 16" style="color: #c3d8ee;">
+                            <path
+                                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                            class="bi bi-telegram" viewBox="0 0 16 16" style="color: #c3d8ee;">
+                            <path
+                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z" />
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                            class="bi bi-whatsapp" viewBox="0 0 16 16" style="color: #c3d8ee;">
+                            <path
+                                d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                            style="color: #c3d8ee;" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <button id="goUp" name="goUp" style="border-radius: 100%; border: none;" onclick="goUp()"><svg
+                    xmlns="http://www.w3.org/2000/svg" width="60" height="60" style="color: #7D25A3;"
+                    fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
+                </svg></button>
+        </div>
+
+        <script>
+            window.onscroll = function () {
+                scrollFunction();
+            }
+            function scrollFunction() {
+                var element = document.getElementById("goUp");
+                if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+                    document.getElementById("goUp").style.display = "block";
+
+                    element.classList.remove("py-0");
+                    element.classList.add("py-0");
+                }
+                else {
+                    document.getElementById("goUp").style.display = "none";
+
+                    element.classList.remove("py-0");
+                    element.classList.add("py-0");
+                }
+            }
+            function goUp() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+            new Vue({
+                el: '#example',
+                data: {
+                    slides: 5
+                },
+                components: {
+                    'carousel-3d': window['carousel-3d'].Carousel3d,
+                    'slide': window['carousel-3d'].Slide
+                }
+            })
+            function myfunction() {
+                var email = document.getElementById('email').value;
+                var at = email.lastIndexOf('@');
+                var dot = email.lastIndexOf('.');
+                if (!(dot - at > 3)) {
+                    alert('Enter the email correctly');
+                }
+            }
+            function myfunction1() {
+                var x = document.getElementById('name').value;
+                if (x == "") {
+                    alert('enter name');
+                    return false;
+                }
+                var email = document.getElementById('email1').value;
+                var at = email.lastIndexOf('@');
+                var dot = email.lastIndexOf('.');
+                if (!(dot - at > 3)) {
+                    alert('Enter the email correctly');
+                    return false;
+                }
+                var y = document.getElementById('job').value;
+                if (y == "") {
+                    alert('enter job');
+                    return false;
+                }
+
+            }
+
+
+
+
+        </script>
+        <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
